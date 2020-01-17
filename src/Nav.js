@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
+import Icon from '/Users/kelseydrivinski/Documents/React/weather-app/src/weathericon.png'
 
 
 
 function Nav() {
     return (
         <nav>
-            <h3>Logo</h3>
+            <img src={Icon} alt="icon" />
             <ul className="navLinks">
                 <Link to="/about">
                     <li>About</li>
@@ -15,6 +16,9 @@ function Nav() {
                 <Link to="/">
                     <li>Home</li>
                 </Link>
+                {/* <Link to="/search">
+                    <li>Search</li>
+                </Link> */}
             </ul>
         </nav>
     );
